@@ -12,8 +12,16 @@
     <header>
         <img src="images/icone.png" alt="logo">
         <div id="busca">
-                <input type="search" name="pesquisa" id="ipesquisa" placeholder="Digite um manga">
+            <div id="orderna">
+                <label for="selecao">Selecione a ordem de selecao:</label>
+                <select name="selecao">
+                    <option value="valor1" selected>Crescente</option>
+                    <option value="valor2">Decrescente</option>
+                </select>
             </div>
+            <input type="search" name="pesquisa" id="ipesquisa" placeholder="Digite um manga">
+            
+        </div>
         <nav>
             <ul>
                 <li><a href="">Home</a></li>
@@ -24,18 +32,6 @@
     </header>
     <main>
        
-        <aside id="filtro">
-            
-            <div id="orderna">
-                <label for="selecao">Selecione a ordem de selecao:</label>
-                <select name="selecao">
-                    <option value="valor1" selected>Crescente</option>
-                    <option value="valor2">Decrescente</option>
-                  </select>
-            </div>
-            
-            
-        </aside>
 
         <section id="mangas">
             <div class="manga">
@@ -72,6 +68,15 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet atque et quidem enim amet nemo alias quas, nostrum esse ducimus laborum molestiae ipsum rerum. Deserunt, id! Molestiae, distinctio natus?</p>
                 
             </div>
+            
+            <!-- 
+                teste de capacidade
+                <div class="manga">
+                <img src="https://picsum.photos/359/300" alt="manga6">
+                <h2>Nome do manga6</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet atque et quidem enim amet nemo alias quas, nostrum esse ducimus laborum molestiae ipsum rerum. Deserunt, id! Molestiae, distinctio natus?</p>
+
+            </div> -->
         </section>
     </main>
     <footer>
