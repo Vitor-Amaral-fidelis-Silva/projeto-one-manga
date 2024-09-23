@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-princ: #FA6711;
+    --cor-sec: #FA8F11;
+    --cor-ter: #FA3E11;
+    --cor-quar: #FAAE11;
+    --cor-contraste: #8F2DFA;
+    --cor-contraste-escuro: #902dfaa8;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        text-decoration: underline;
+        color: white;
+    }
+}
+
+
+
+header {
+    display: flex;
+    background-image: linear-gradient(to right, var(--cor-princ), var(--cor-quar));
+    justify-content: space-between;
+    align-content: center;
+
+    img {
+        margin-left: 1%;
+        min-width: 110px;
+        height: 100px;
+        display: inline-block;
+        flex-grow: 0;
+    }
+
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+main {
+    margin: 1% auto;
+
+    #tabela {
+        text-align: center;
+        background-image: linear-gradient(to bottom, var(--cor-quar), var(--cor-contraste));
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border-radius: 15px;
+        border: 2px solid black;
+        box-shadow: 4px 1px rgba(0, 0, 0, 0.336);
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        max-width: 1400px;
+
+        #titulo {
+            flex-grow: 1;
+            width: 100%;
+            text-align: center;
+            height: 30px;
+            display: block;
+            border: 2px solid black;
+            padding: 7px 0;
+            margin-bottom: 3px;
+            border-radius: 15px 15px 0 0;
+            background-image: linear-gradient(to bottom right, var(--cor-ter), var(--cor-contraste-escuro));
+        }
+
+        #cap {
+            flex-grow: 1;
+            width: 100%;
+            text-align: center;
+            height: 30px;
+            display: block;
+            border: 2px solid black;
+            padding: 7px 0;
+            border-radius: 0 0 15px 15px;
+            background-image: linear-gradient(to top right, var(--cor-ter), var(--cor-contraste-escuro));
+        }
+
+        #capitulo {
+            img {
+                display: inline-block;
+                margin: 2px 0;
+                width: 100%;
+                height: 500px;
+                background: no-repeat center;
+                background-size: cover;
+            }
+        }
+
+        #botoes {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: -5px;
+
+            a {
+                flex-grow: 1;
+                width: 100%;
+            }
+
+            button {
+                width: 100%;
+                height: 40px;
+                background-image: linear-gradient(to right, var(--cor-princ), var(--cor-contraste));
+                padding: 1px;
+                font-size: large;
+
+                &:hover {
+                    color: white;
+                }
+            }
+            #btnreturn{
+                border-radius: 0 0 0 15px;
+            }
+            #btnprox{
+                border-radius: 0 0 15px 0;
+            }
+        }
+
+    }
+
+}
+
+
+footer {
+
+    display: flex;
+    background-image: linear-gradient(to right, var(--cor-princ), var(--cor-quar));
+    justify-content: space-around;
+    img {
+        width: 120px;
+        height: 100px;
+        display: inline-block;
+    }
+
+}

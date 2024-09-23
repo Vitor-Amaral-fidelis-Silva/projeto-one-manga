@@ -18,82 +18,166 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: var(--cor-contraste-escuro);
+  color: white;
 }
 
 header {
   display: flex;
   background-image: linear-gradient(to right, var(--cor-princ), var(--cor-quar));
   justify-content: space-between;
-  margin-bottom: 10px;
+  align-content: center;
 }
 header img {
-  margin-left: 40px;
-  width: 120px;
+  margin-left: 1%;
+  min-width: 110px;
   height: 100px;
   display: inline-block;
-}
-header nav {
-  padding-top: 40px;
-  padding-right: 40px;
-  margin-right: 40px;
-}
-header nav ul > li {
-  display: inline-block;
-  color: black;
-  text-decoration: none;
+  flex-grow: 0;
 }
 header #container {
-  display: inline-block;
-  padding-top: 30px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 header #container #orderna {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-image: linear-gradient(to bottom, var(--cor-princ), var(--cor-contraste));
+  border-radius: 9%;
+  padding: 8px;
+}
+header #container #orderna label {
+  display: flex;
+  justify-content: center;
+}
+header #container input {
   display: inline-block;
-  background-color: var(--cor-ter);
-  padding: 10px;
-  margin-bottom: 5px;
-  border-radius: 10px;
+  border-radius: 9%;
+  text-align: center;
+  margin: 0 7px;
+  height: 50px;
+  min-width: 25%;
+  text-align: center;
 }
 
 body {
   background-color: white;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   justify-content: space-between;
 }
 
 main {
-  background-color: gray;
-  padding-bottom: 120px;
-  margin: 0 auto;
+  margin: 1% auto;
+}
+main #container2 {
   text-align: center;
-  max-width: 1600px;
-  border-radius: 10px;
-  border: 3px solid black;
+  background-image: linear-gradient(to bottom, white, var(--cor-contraste));
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  border-radius: 15px;
+  border: 2px solid black;
+  box-shadow: 4px 1px rgba(0, 0, 0, 0.336);
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  max-width: 1400px;
+}
+main #container2 #info {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  display: block;
+}
+main #container2 #info #titulo {
+  text-align: center;
+  display: block;
+  border: 2px solid black;
+  padding: 1px;
+  border-radius: 15px 15px 0 0;
+  background-image: linear-gradient(to bottom right, var(--cor-ter), var(--cor-contraste-escuro));
+}
+main #container2 #info img {
+  display: inline-block;
+  margin: 2px 0;
+  width: 100%;
+  height: 400px;
+  background: no-repeat center;
+  background-size: cover;
+}
+main #container2 #info #container3 {
+  margin-top: -6px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom right, var(--cor-ter), var(--cor-contraste-escuro));
+}
+main #container2 #info #container3 #genero {
+  margin-right: 20px;
+}
+main #container2 #info #descricao {
+  background-image: linear-gradient(to bottom right, var(--cor-ter), var(--cor-quar));
+  text-align: center;
+  padding: 5px;
+}
+main #container2 #info #botoes {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+main #container2 #info #botoes a {
   flex-grow: 1;
 }
-main #info #titulo {
-  background-image: linear-gradient(to right, var(--cor-quar), var(--cor-sec));
+main #container2 #info #botoes button {
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(to right, var(--cor-princ), var(--cor-contraste));
+  padding: 1px;
+  font-size: large;
+}
+main #container2 #info #botoes button:hover {
+  color: white;
+}
+main #container2 #info #botoes #btnreturn {
+  border-radius: 0 0 0 15px;
+}
+main #container2 #info #botoes #btnava {
+  border-radius: 0 0 15px 0;
+}
+main #capitulos {
   text-align: center;
-  padding: 10px;
-  border-radius: 10px 10px 0 0;
-  border: 1px solid black;
+  background-image: linear-gradient(to bottom right, white, var(--cor-contraste));
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border-radius: 15px;
+  border: 2px solid black;
+  box-shadow: 4px 1px rgba(0, 0, 0, 0.336);
+  text-align: center;
+  align-content: center;
+  align-items: center;
 }
-main #info img {
-  width: 1600px;
-  height: 500px;
+main #capitulos h1 {
+  flex-grow: 1;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 15px 15px 0 0;
 }
-main #info #descricao {
-  background-image: linear-gradient(to right, var(--cor-quar), var(--cor-sec));
-  text-align: justify;
-  margin-top: -4px;
-  padding: 10px;
-  border-radius: 0 0 10px 10px;
-  border: 1px solid black;
+main #capitulos a {
+  width: 100%;
+  flex-grow: 1;
+  border: 2px solid black;
+}
+main #capitulos a h2 {
+  width: 100%;
+}
+main #capitulos #capfinal {
+  border-radius: 0 0 15px 15px;
 }
 
 footer {
@@ -105,13 +189,4 @@ footer img {
   width: 120px;
   height: 100px;
   display: inline-block;
-}
-footer div {
-  padding: 10px 0;
-}
-footer div nav > ul > li {
-  color: black;
-  text-decoration: none;
-  list-style: none;
-  padding-left: 10px;
 }/*# sourceMappingURL=manga.css.map */

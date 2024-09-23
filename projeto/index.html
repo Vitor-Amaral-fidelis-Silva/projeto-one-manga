@@ -10,25 +10,35 @@
 </head>
 <body>
     <header>
-        <img src="assets/images/icone.png" alt="logo">
+        <a href="index.html">
+         <img src="assets/images/icone.png" alt="logo">   
+        </a>
+        
         <div id="busca">
             <div id="orderna">
                 <label for="selecao">Selecione a ordem de selecao:</label>
                 <select name="selecao" id="selecao">
-                    <option value="valor1" selected>Crescente</option>
-                    <option value="valor2">Decrescente</option>
+                    <option value="valor1" selected>Nome Crescente</option>
+                    <option value="valor2">Nome Decrescente</option>
+                    <option value="valor3">Avaliação Crescente</option>
+                    <option value="valor4">Avaliação Decrescente</option>
+                </select>
+                <select name="genero" id="genero">
+                    <option value="valor1" selected>Nenhuma preferência de genero</option>
+                    <option value="valor2">Seinen</option>
+                    <option value="valor3">Mecha</option>
+                    <option value="valor4">Isekai</option>
+                    <option value="valor5">Shounen</option>
                 </select>
             </div>
+            
             <input type="search" name="pesquisa" id="ipesquisa" placeholder="Digite um manga">
             
         </div>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Mangás</a></li>
-                <li><a href="">Genero</a></li>
-            </ul>
-        </nav>
+        
+        <a href="login.html">
+            Sair
+        </a>
     </header>
     
     <main>
@@ -38,28 +48,10 @@
         </section>
     </main>
     <footer>
-        <img src="assets/images/icone.png" alt="logo">
+        <a href="index.html">
+            <img src="assets/images/icone.png" alt="logo">   
+        </a>
         
-        <div id="Navegue">
-            <h1>Navegue</h1>        
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Mangás</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-        <div id="Paginas">
-            <h1>Páginas</h1>
-            <nav>
-                <ul>
-                    <li><a href="">Contato</a></li>
-                    <li><a href="">Termo de uso</a></li>
-                    <li><a href="">Politicas de uso</a></li>
-                </ul>
-            </nav>
-        </div>
     </footer>
     <script src="assets/script/home.js"></script>
 </body>

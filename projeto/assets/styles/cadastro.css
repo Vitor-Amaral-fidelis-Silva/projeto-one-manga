@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-princ: #FA6711;
+  --cor-sec: #FA8F11;
+  --cor-ter: #FA3E11;
+  --cor-quar: #FAAE11;
+  --cor-contraste: #8F2DFA;
+  --cor-contraste-escuro: #902dfaa8;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+header {
+  display: flex;
+  background-image: linear-gradient(to right, var(--cor-princ), var(--cor-quar));
+  justify-content: space-between;
+  align-content: center;
+}
+header img {
+  margin-left: 1%;
+  min-width: 110px;
+  height: 100px;
+  display: inline-block;
+  flex-grow: 0;
+  background: no-repeat center;
+  background-size: cover;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  margin: 1% auto;
+  background-image: linear-gradient(var(--cor-sec), var(--cor-contraste));
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  box-shadow: 4px 1px rgba(0, 0, 0, 0.336);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  max-width: 1400px;
+}
+main form {
+  width: 100%;
+}
+main input {
+  width: 100%;
+}
+main a {
+  width: 100%;
+}
+main button {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  background-image: linear-gradient(to right, var(--cor-princ), var(--cor-quar));
+  justify-content: space-around;
+}
+footer img {
+  width: 120px;
+  height: 100px;
+  display: inline-block;
+}/*# sourceMappingURL=cadastro.css.map */
